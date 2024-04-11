@@ -1,15 +1,4 @@
 <?php
-//Due Date: April 5,2024
-# Class: MIT439_004
-/*
-Student Name: Daniel Laurin
-Student Number: w0828564
-Assignment Number: Assign #9
-userScew: w24afd.scweb.ca/
-*/
-?>
-
-<?php
 // Connect to the database
 require_once('databaseConnectionVariables.php');
 $dbConnection = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);

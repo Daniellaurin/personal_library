@@ -1,14 +1,4 @@
 <?php
-//Due Date: April 5,2024
-# Class: MIT439_004
-/*
-Student Name: Daniel Laurin
-Student Number: w0828564
-Assignment Number: Assign #8
-userScew: w24afd.scweb.ca/
-*/
-?>
-<?php
 // Include the database connection variables
 require_once('databaseConnectionVariables.php');
 
@@ -47,4 +37,3 @@ if ($result && mysqli_num_rows($result) > 0) {
 
 // Close the database connection
 mysqli_close($dbConnection);
-?>
