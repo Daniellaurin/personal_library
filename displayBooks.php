@@ -27,13 +27,14 @@ $result = mysqli_query($dbConnection, $query);
 <body>
     <div>
         <h2>Display Book Records</h2>
-        <div class='wrapper'>
-            <?php
+        <div class="book-records">
+            <div class='wrapper'>
+                <?php
             // Loop through the result set and display book records
             while ($row = mysqli_fetch_array($result)) {
             ?>
                 <article>
-                    <img src='book.png' alt='<?php echo $row[1]; ?>' Title='<?php echo $row[1]; ?>' />
+                    <img src='images/book.png' alt='<?php echo $row[1]; ?>' Title='<?php echo $row[1]; ?>' />
                     <p><?php echo $row[1]; ?></p>
                     <p>Author: <?php echo $row[2]; ?></p>
                     <p>Year Published: <?php echo $row[3]; ?></p>
@@ -44,6 +45,7 @@ $result = mysqli_query($dbConnection, $query);
             ?>
         </div>
         <p class='clear'></p>
+        </div>
 
         <?php
         // Close the database connection
@@ -63,10 +65,12 @@ $result = mysqli_query($dbConnection, $query);
 
         <body>
             <div class="box">
+            <div>
                 <p><a href='bookForm.php'>[+]Add A Book</a></p>
                 <p><a href='deleteBookForm.php'>[-]Delete A Book</a></p>
                 <p><a href='updateBookForm.php'>[~]Update A Book</a></p>
                 <p><em>Daniel Laurin &nbsp;&nbsp;Date: <?php echo $currentDate; ?></em></p>
+            </div>
             </div>
         </body>
 

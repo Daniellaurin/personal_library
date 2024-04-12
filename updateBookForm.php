@@ -42,9 +42,9 @@
         ?>
 
         <!-- Form to update author name -->
-        <form action="updateBook.php" method="post">
-            <fieldset>
-                <legend>Update Author Name</legend>
+        <div class="box">
+            <form action="updateBook.php" method="post" class="update-author-form">
+                <legend><b>Update Author Name</b></legend>
                 <!-- Input for book title -->
                 <label for="title">Book Title (existing):<span class="required">*</span></label>
                 <input list="books" id="title" name="titleInput" size="20" required /><br />
@@ -52,10 +52,11 @@
                 <label for="author">New Author Name:<span class="required">*</span></label>
                 <input type="text" id="author" name="authorInput" size="14" required /><br />
                 <br />
-            </fieldset>
-            <!-- Submit button -->
-            <input type="submit" name="submit" value="Submit Information!" />
-        </form>
+                <!-- Submit button -->
+                <input type="submit" name="submit" value="Submit Information!" />
+            </form>
+        </div>
+
 
         <!-- Datalist for book titles -->
         <datalist id="books">
